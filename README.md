@@ -16,12 +16,16 @@ Most of the live code is in private repos. The public surface is below.
 ### Currently
 
 - Daily contributions to the Anthropic SDKs ([Python](https://github.com/anthropics/anthropic-sdk-python), [TypeScript](https://github.com/anthropics/anthropic-sdk-typescript)), [vercel/ai](https://github.com/vercel/ai), and [ollama](https://github.com/ollama/ollama).
+- Writing on [Substack](https://substack.com/@zawwarsami) about the things I find while I build.
+- Climbing the [HTB ladder](https://app.hackthebox.com/public/users/2469522) for offensive-security practice; writeups land on the Substack.
 - Writing the long book *Unwrapping What Exists* — on consciousness, AI, and inquiry.
 - Building **Anteroom Oracle** — an AI terminal for macro and geopolitical intelligence.
 
 ### Elsewhere
 
 - Site → [zawwarsami.com](https://zawwarsami.com)
+- Substack → [substack.com/@zawwarsami](https://substack.com/@zawwarsami)
+- Hack The Box → [profile](https://app.hackthebox.com/public/users/2469522)
 - LinkedIn → [linkedin.com/in/zawwarsami](https://www.linkedin.com/in/zawwarsami)
 - Twitter / X → [@Kh4nZawwar](https://twitter.com/Kh4nZawwar)
 - Studio → [github.com/anteroom-studio](https://github.com/anteroom-studio)
