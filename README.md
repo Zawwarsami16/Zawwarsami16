@@ -1,25 +1,30 @@
 # Anteroom Studio
 
-Building systems, interfaces, and digital environments.
+Building digital systems and interfaces.
 
-## Focus
+---
 
-- Frontend systems
-- Interactive UI / UX
-- Applied AI in real-world interfaces
-- Restaurant and business platforms
+## Work
 
-## Selected Work
+- Restaurant platforms (ordering, admin, operations)
+- Frontend systems (React / Vite)
+- Interface-focused development
 
-- Hakka Nation — restaurant website upgrade
-- Kajun Chicken & Seafood — menu and operations interface
+---
+
+## Selected Projects
+
+- Hakka Nation — website and ordering system  
+- Kajun Chicken & Seafood — menu and operations interface  
+
+---
 
 ## Studio
 
-Anteroom is an independent studio focused on usable, real-world software.
+Anteroom is an independent studio focused on building usable, real-world software.
 
-Research and systems led by ZAI (Zawwar Sami).
+---
 
 ## Contact
 
-Open to collaborations and project work.
+Available for collaborations and project work.
