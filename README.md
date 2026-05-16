@@ -1,6 +1,6 @@
 # Zawwar Sami
 
-Engineer & builder. Mississauga, Canada. Founder of [@anteroom-studio](https://github.com/anteroom-studio).
+Engineer & builder. Canada. Founder of [@anteroom-studio](https://github.com/anteroom-studio).
 
 I'm Zawwar Sami — independent engineer working at the intersection of AI and markets. I build reasoning systems and tools that compress decades of macro and geopolitical signal into something a single operator can act on. Anteroom Studio (founded 2019) is the home for that work. ZAI is the long-running autonomous-intelligence project I'm building inside it.
 
@@ -33,4 +33,4 @@ Most of the live code is in private repos. The public surface is below.
 
 ---
 
-<sub>Independent · Mississauga, Ontario, Canada · Available for work that earns its existence.</sub>
+<sub>Independent · Canada · Available for work that earns its existence.</sub>
