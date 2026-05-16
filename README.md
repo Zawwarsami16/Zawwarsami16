@@ -12,6 +12,7 @@ Most of the live code is in private repos. The public surface is below.
 - **[pocket](https://github.com/Zawwarsami16/pocket)** — browser-only AI chat. Bring your own key, auto-detect the provider, nothing leaves the device. Live at [pocket-tau-sepia.vercel.app](https://pocket-tau-sepia.vercel.app).
 - **[Zai-Hacking-game](https://github.com/Zawwarsami16/Zai-Hacking-game)** — terminal-feel hacker RPG. Real shell, fake stakes.
 - **[engineering-portfolio](https://github.com/Zawwarsami16/engineering-portfolio)** — personal site. Next.js 16, framer-motion, Lenis. Live at [zawwarsami.com](https://zawwarsami.com).
+- **[htb-progress](https://github.com/Zawwarsami16/htb-progress)** — public Hack The Box notebook. Writeups, patterns, and methodology from solved boxes and CTF events.
 
 ### Currently
 
