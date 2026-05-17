@@ -28,7 +28,7 @@
 
 ### About me
 
-I'm an independent engineer based in Canada. I run [Anteroom Studio](https://github.com/anteroom-studio) — a one-person studio building reasoning systems and operator tools at the intersection of AI and markets. ZAI is the long-running autonomous-intelligence project I'm building inside it. Most of the live code stays in private repos; the public surface here is the part I'm willing to ship under my name.
+I'm an independent Developer based in Canada. I run [Anteroom Studio](https://github.com/anteroom-studio) — a one-person studio building reasoning systems and operator tools at the intersection of AI and markets. ZAI is the long-running autonomous-intelligence project I'm building inside it. Most of the live code stays in private repos; the public surface here is the part I'm willing to ship under my name.
 
 If something below catches your eye and you want to build with me, the easiest channel is the email above.
 
@@ -117,7 +117,7 @@ If something below catches your eye and you want to build with me, the easiest c
 
 ---
 
-### Open work
+### Not Open To work
 
 > Active, public, mine. Forks (where I push PRs to upstream) are not in this list.
 
