@@ -97,19 +97,7 @@ Anteroom Oracle. Daily Anthropic SDK / vercel / ollama work. Climbing HTB. Writi
 
 <div align="center">
 
-<a href="https://github.com/Zawwarsami16">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=Zawwarsami16&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&rank_icon=github&bg_color=0a0a0a&title_color=ff003c&icon_color=ff003c&text_color=e8e8e8&ring_color=ff003c"/>
-</a>
-<a href="https://github.com/Zawwarsami16">
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Zawwarsami16&layout=compact&hide_border=true&langs_count=8&bg_color=0a0a0a&title_color=ff003c&text_color=e8e8e8"/>
-</a>
-
-<br/>
-<br/>
-
-<a href="https://git.io/streak-stats">
-  <img src="https://streak-stats.demolab.com?user=Zawwarsami16&hide_border=true&background=0a0a0a&stroke=ff003c&ring=ff003c&fire=ff003c&currStreakLabel=ff003c&sideLabels=e8e8e8&dates=888888&currStreakNum=e8e8e8&sideNums=e8e8e8" alt="streak"/>
-</a>
+<img src="./assets/telemetry.svg" alt="telemetry — shipped / contrib / followers / stars" width="900" height="180" style="max-width:100%"/>
 
 </div>
 
