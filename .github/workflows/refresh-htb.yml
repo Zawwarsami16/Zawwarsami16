@@ -1,0 +1,107 @@
+name: refresh htb
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: pull htb profile and rewrite svg
+        run: |
+          python3 - <<'PY'
+          import json, re, urllib.request
+
+          URL = "https://labs.hackthebox.com/api/v4/profile/2469522"
+
+          try:
+              req = urllib.request.Request(URL, headers={"User-Agent": "Mozilla/5.0", "Accept": "application/json"})
+              with urllib.request.urlopen(req, timeout=12) as r:
+                  data = json.loads(r.read().decode("utf-8"))
+              p = data["profile"]
+              fields = {
+                  "NAME": p.get("name", "ZAWWAR").upper(),
+                  "COUNTRY": p.get("country_code", "CA"),
+                  "RANK": (p.get("rank") or "HACKER").upper(),
+                  "RANKID": p.get("rank_id", 3),
+                  "POINTS": p.get("points", 0),
+                  "USEROWNS": p.get("user_owns", 0),
+                  "SYSOWNS": p.get("system_owns", 0),
+                  "RANKING": p.get("ranking", 0),
+                  "NEXTRANK": (p.get("next_rank") or "PRO HACKER").upper(),
+                  "PROGRESS": int(round(p.get("current_rank_progress", 0))),
+              }
+              print(f"htb profile pulled: {fields}")
+          except Exception as e:
+              print(f"htb api fetch failed: {e}; keeping existing svg")
+              raise SystemExit(0)
+
+          with open("assets/htb.svg") as f:
+              svg = f.read()
+
+          # update text markers
+          for tag, value in fields.items():
+              svg = re.sub(
+                  rf'(<!--{tag}-->).*?(<!--/{tag}-->)',
+                  lambda m: m.group(1) + str(value) + m.group(2),
+                  svg, flags=re.S,
+              )
+
+          # update progress-bar geometry (track is 780 wide)
+          progress = fields["PROGRESS"]
+          fill_w = int(round(780 * progress / 100))
+          marker_x = fill_w - 2 if fill_w >= 2 else 0
+          # there are two rects with width set; replace the dynamic ones by anchor
+          # progress fill rect: <rect x="0" y="10" width="<num>" height="6" fill="url(#bar)"
+          svg = re.sub(
+              r'(<rect x="0" y="10" width=")\d+(" height="6" fill="url\(#bar\)")',
+              lambda m: f'{m.group(1)}{fill_w}{m.group(2)}',
+              svg,
+          )
+          # also update the SMIL animate from/to so animation reaches new value
+          svg = re.sub(
+              r'(<animate attributeName="width" from="0" to=")\d+(")',
+              lambda m: f'{m.group(1)}{fill_w}{m.group(2)}',
+              svg,
+          )
+          svg = re.sub(
+              r'(<set attributeName="width" to=")\d+(")',
+              lambda m: f'{m.group(1)}{fill_w}{m.group(2)}',
+              svg,
+          )
+          # marker x
+          svg = re.sub(
+              r'(<rect x=")\d+(" y="6" width="2" height="14")',
+              lambda m: f'{m.group(1)}{marker_x}{m.group(2)}',
+              svg,
+          )
+          svg = re.sub(
+              r'(<animate attributeName="x" from="-2" to=")\d+(")',
+              lambda m: f'{m.group(1)}{marker_x}{m.group(2)}',
+              svg,
+          )
+
+          with open("assets/htb.svg", "w") as f:
+              f.write(svg)
+          PY
+
+      - name: commit and push if changed
+        run: |
+          if git diff --quiet -- assets/htb.svg; then
+            echo "no change"
+            exit 0
+          fi
+          git config user.name "Zawwar Sami"
+          git config user.email "zawwarsami16@gmail.com"
+          git add assets/htb.svg
+          git commit -m "tick: refresh htb stats"
+          git push

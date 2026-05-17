@@ -99,6 +99,10 @@ Anteroom Oracle. Daily Anthropic SDK / vercel / ollama work. Climbing HTB. Writi
 
 <img src="./assets/telemetry.svg" alt="telemetry — shipped / contrib / followers / stars" width="900" height="180" style="max-width:100%"/>
 
+<br/>
+
+<a href="https://app.hackthebox.com/public/users/2469522"><img src="./assets/htb.svg" alt="hack the box — rank, points, owns, progress" width="900" height="180" style="max-width:100%"/></a>
+
 </div>
 
 <br/>
