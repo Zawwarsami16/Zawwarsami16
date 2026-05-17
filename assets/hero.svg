@@ -1,91 +1,143 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 240" preserveAspectRatio="xMidYMid meet">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="340" viewBox="0 0 900 340">
   <defs>
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ff003c" stroke-width="0.5" opacity="0.12"/>
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ff003c" stroke-width="0.4" opacity="0.10"/>
     </pattern>
-    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+    <linearGradient id="topfade" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#000" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="botfade" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.7"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="1.4" result="b"/>
       <feMerge>
-        <feMergeNode in="blur"/>
+        <feMergeNode in="b"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
-    <filter id="bigglow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="6" result="blur"/>
+    <filter id="bigglow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
       <feMerge>
-        <feMergeNode in="blur"/>
+        <feMergeNode in="b"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
-    <linearGradient id="scanGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#ff003c" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#ff003c" stop-opacity="0.45"/>
-      <stop offset="100%" stop-color="#ff003c" stop-opacity="0"/>
-    </linearGradient>
-    <linearGradient id="vignette" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#000" stop-opacity="0.5"/>
-      <stop offset="50%" stop-color="#000" stop-opacity="0"/>
-      <stop offset="100%" stop-color="#000" stop-opacity="0.5"/>
-    </linearGradient>
   </defs>
 
-  <rect width="900" height="240" fill="#0a0a0a"/>
-  <rect width="900" height="240" fill="url(#grid)"/>
+  <!-- canvas -->
+  <rect width="900" height="340" fill="#0a0a0a"/>
+  <rect width="900" height="340" fill="url(#grid)"/>
+  <rect width="900" height="60" fill="url(#topfade)"/>
+  <rect y="280" width="900" height="60" fill="url(#botfade)"/>
 
-  <!-- Corner brackets -->
-  <g stroke="#ff003c" stroke-width="1.5" fill="none" opacity="0.7">
-    <path d="M 16 16 L 16 36 M 16 16 L 36 16"/>
-    <path d="M 884 16 L 884 36 M 884 16 L 864 16"/>
-    <path d="M 16 224 L 16 204 M 16 224 L 36 224"/>
-    <path d="M 884 224 L 884 204 M 884 224 L 864 224"/>
+  <!-- corner brackets -->
+  <g stroke="#ff003c" stroke-width="1.5" fill="none" opacity="0.8">
+    <path d="M 14 14 L 14 36 M 14 14 L 36 14"/>
+    <path d="M 886 14 L 886 36 M 886 14 L 864 14"/>
+    <path d="M 14 326 L 14 304 M 14 326 L 36 326"/>
+    <path d="M 886 326 L 886 304 M 886 326 L 864 326"/>
   </g>
 
-  <!-- Status row top -->
-  <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10" fill="#ff003c" opacity="0.8">
-    <circle cx="46" cy="28" r="3.5" fill="#ff003c">
-      <animate attributeName="opacity" values="1;0.25;1" dur="1.4s" repeatCount="indefinite"/>
+  <!-- top status bar -->
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10" letter-spacing="2">
+    <circle cx="48" cy="32" r="3.5" fill="#ff003c">
+      <animate attributeName="opacity" values="1;0.25;1" dur="1.6s" repeatCount="indefinite"/>
     </circle>
-    <text x="58" y="32" letter-spacing="2">PROCESS RUNNING</text>
-    <text x="780" y="32" letter-spacing="2" text-anchor="end">UTC 2026</text>
+    <text x="60" y="36" fill="#ff003c" opacity="0.9">anteroom://main</text>
+    <text x="450" y="36" fill="#666" text-anchor="middle">— SECURE CHANNEL —</text>
+    <text x="852" y="36" fill="#ff003c" opacity="0.9" text-anchor="end">04:30 UTC</text>
   </g>
 
-  <!-- Animated horizontal sweep behind the name -->
-  <rect x="-200" y="86" width="200" height="80" fill="url(#scanGrad)" opacity="0.6" transform="rotate(0)">
-    <animate attributeName="x" from="-200" to="900" dur="4s" repeatCount="indefinite"/>
-  </rect>
+  <!-- horizontal divider under status -->
+  <line x1="40" y1="56" x2="860" y2="56" stroke="#ff003c" stroke-width="0.6" opacity="0.4"/>
 
-  <!-- Name -->
-  <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace" text-anchor="middle">
-    <text x="450" y="135" font-size="62" font-weight="700" fill="#ff003c" filter="url(#bigglow)" letter-spacing="14">
-      ZAWWAR · SAMI
-    </text>
+  <!-- terminal session -->
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="15">
+
+    <!-- line 1: prompt + ssh command  -->
+    <g opacity="0">
+      <animate attributeName="opacity" from="0" to="1" begin="0.2s" dur="0.3s" fill="freeze"/>
+      <text x="40" y="92" fill="#ff003c" font-weight="700">$</text>
+      <text x="60" y="92" fill="#e8e8e8">ssh zawwar@anteroom</text>
+    </g>
+
+    <!-- response line -->
+    <g opacity="0">
+      <animate attributeName="opacity" from="0" to="1" begin="0.7s" dur="0.3s" fill="freeze"/>
+      <text x="40" y="116" fill="#888">Last login: Mon May 18 2026 04:30:01 from cloudflare</text>
+    </g>
+
+    <!-- line 2: prompt + whoami  -->
+    <g opacity="0">
+      <animate attributeName="opacity" from="0" to="1" begin="1.2s" dur="0.3s" fill="freeze"/>
+      <text x="40" y="148" fill="#ff003c" font-weight="700">$</text>
+      <text x="60" y="148" fill="#e8e8e8">whoami --verbose</text>
+    </g>
+
+    <!-- whoami response, glowing name -->
+    <g opacity="0">
+      <animate attributeName="opacity" from="0" to="1" begin="1.7s" dur="0.4s" fill="freeze"/>
+      <text x="60" y="172" fill="#ff003c" font-weight="700" filter="url(#bigglow)" font-size="17">Zawwar Sami</text>
+      <text x="172" y="172" fill="#888">· independent engineer · canada</text>
+    </g>
+
+    <!-- line 3: prompt + status -->
+    <g opacity="0">
+      <animate attributeName="opacity" from="0" to="1" begin="2.4s" dur="0.3s" fill="freeze"/>
+      <text x="40" y="204" fill="#ff003c" font-weight="700">$</text>
+      <text x="60" y="204" fill="#e8e8e8">ps --running</text>
+    </g>
+
+    <!-- process list rows -->
+    <g opacity="0">
+      <animate attributeName="opacity" from="0" to="1" begin="2.9s" dur="0.3s" fill="freeze"/>
+      <text x="60" y="226" fill="#888">anteroom-oracle</text>
+      <circle cx="222" cy="221" r="3" fill="#ff003c" filter="url(#glow)">
+        <animate attributeName="opacity" values="1;0.3;1" dur="1.4s" repeatCount="indefinite"/>
+      </circle>
+      <text x="236" y="226" fill="#ff003c">building</text>
+    </g>
+    <g opacity="0">
+      <animate attributeName="opacity" from="0" to="1" begin="3.2s" dur="0.3s" fill="freeze"/>
+      <text x="60" y="246" fill="#888">zai</text>
+      <circle cx="222" cy="241" r="3" fill="#ff003c" filter="url(#glow)">
+        <animate attributeName="opacity" values="1;0.3;1" dur="1.4s" begin="0.4s" repeatCount="indefinite"/>
+      </circle>
+      <text x="236" y="246" fill="#ff003c">running</text>
+    </g>
+    <g opacity="0">
+      <animate attributeName="opacity" from="0" to="1" begin="3.5s" dur="0.3s" fill="freeze"/>
+      <text x="60" y="266" fill="#888">htb-rank</text>
+      <circle cx="222" cy="261" r="3" fill="#ff003c" filter="url(#glow)">
+        <animate attributeName="opacity" values="1;0.3;1" dur="1.4s" begin="0.8s" repeatCount="indefinite"/>
+      </circle>
+      <text x="236" y="266" fill="#ff003c">climbing</text>
+    </g>
+    <g opacity="0">
+      <animate attributeName="opacity" from="0" to="1" begin="3.8s" dur="0.3s" fill="freeze"/>
+      <text x="60" y="286" fill="#888">unwrapping-what-exists</text>
+      <circle cx="222" cy="281" r="3" fill="#444">
+      </circle>
+      <text x="236" y="286" fill="#666">draft 3</text>
+    </g>
+
+    <!-- final prompt with blinking cursor -->
+    <g opacity="0">
+      <animate attributeName="opacity" from="0" to="1" begin="4.3s" dur="0.3s" fill="freeze"/>
+      <text x="40" y="316" fill="#ff003c" font-weight="700">$</text>
+      <rect x="62" y="304" width="9" height="16" fill="#ff003c">
+        <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1s" begin="4.3s" repeatCount="indefinite"/>
+      </rect>
+    </g>
   </g>
 
-  <!-- Blinking cursor -->
-  <rect x="800" y="98" width="12" height="46" fill="#ff003c" filter="url(#glow)">
-    <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1s" repeatCount="indefinite"/>
-  </rect>
-
-  <!-- Tagline -->
-  <text x="450" y="166" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" fill="#888" text-anchor="middle" letter-spacing="6">
-    INDEPENDENT  ·  CANADA  ·  ANTEROOM STUDIO
-  </text>
-
-  <!-- EKG / pulse line drawing in -->
-  <path d="M 0 200 L 120 200 L 138 184 L 156 216 L 174 200 L 320 200 L 338 172 L 356 228 L 374 200 L 540 200 L 558 188 L 576 212 L 594 200 L 770 200 L 788 178 L 806 222 L 824 200 L 900 200"
-        fill="none" stroke="#ff003c" stroke-width="1.6" opacity="0.85" filter="url(#glow)"
-        stroke-dasharray="1200" stroke-dashoffset="1200">
-    <animate attributeName="stroke-dashoffset" from="1200" to="0" dur="2.6s" begin="0s" fill="freeze"/>
-    <animate attributeName="opacity" values="0.85;0.55;0.85" dur="2.4s" begin="2.6s" repeatCount="indefinite"/>
-  </path>
-
-  <!-- Vertical scanline moving down -->
-  <line x1="0" y1="-2" x2="900" y2="-2" stroke="#ff003c" stroke-width="1.2" opacity="0.45">
-    <animate attributeName="y1" from="-2" to="242" dur="3.6s" repeatCount="indefinite"/>
-    <animate attributeName="y2" from="-2" to="242" dur="3.6s" repeatCount="indefinite"/>
+  <!-- vertical scanline -->
+  <line x1="0" x2="900" y1="-2" y2="-2" stroke="#ff003c" stroke-width="1" opacity="0.25">
+    <animate attributeName="y1" from="-2" to="342" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="y2" from="-2" to="342" dur="5s" repeatCount="indefinite"/>
   </line>
-
-  <!-- Top/bottom darkening -->
-  <rect width="900" height="240" fill="url(#vignette)"/>
 </svg>
