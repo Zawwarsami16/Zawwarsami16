@@ -14,7 +14,7 @@ Independent engineer in Canada. I build reasoning systems for operators — tool
 
 <br/>
 
-<img src="./assets/divider.svg" alt="" width="100%"/>
+<div align="center"><img src="./assets/divider.svg" alt="" width="900" height="32" style="max-width:100%"/></div>
 
 <br/>
 
@@ -85,7 +85,7 @@ Anteroom Oracle. Daily Anthropic SDK / vercel / ollama work. Climbing HTB. Writi
 
 <br/>
 
-<img src="./assets/divider.svg" alt="" width="100%"/>
+<div align="center"><img src="./assets/divider.svg" alt="" width="900" height="32" style="max-width:100%"/></div>
 
 <br/>
 
@@ -121,7 +121,7 @@ Anteroom Oracle. Daily Anthropic SDK / vercel / ollama work. Climbing HTB. Writi
 
 <br/>
 
-<img src="./assets/divider.svg" alt="" width="100%"/>
+<div align="center"><img src="./assets/divider.svg" alt="" width="900" height="32" style="max-width:100%"/></div>
 
 <br/>
 
