@@ -1,0 +1,91 @@
+name: refresh telemetry
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: collect stats and write SVG
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import json, os, re, subprocess
+          from datetime import datetime, timezone
+
+          def gh(*args):
+              out = subprocess.check_output(["gh", "api", *args], text=True)
+              return json.loads(out)
+
+          USER = "Zawwarsami16"
+
+          followers = gh(f"users/{USER}", "--jq", ".followers")
+          if isinstance(followers, int):
+              followers_n = followers
+          else:
+              followers_n = int(followers)
+
+          repos = gh(f"users/{USER}/repos?per_page=100&type=owner")
+          stars = sum(r.get("stargazers_count", 0) for r in repos if not r.get("fork"))
+
+          search = gh("search/issues", "-X", "GET", "-f", f"q=author:{USER} is:pr is:merged", "--jq", ".total_count")
+          shipped_n = int(search) if isinstance(search, (str, int)) else int(search)
+
+          query = '{ user(login: "%s") { contributionsCollection { contributionCalendar { totalContributions } } } }' % USER
+          out = subprocess.check_output(["gh", "api", "graphql", "-f", f"query={query}"], text=True)
+          contrib_n = json.loads(out)["data"]["user"]["contributionsCollection"]["contributionCalendar"]["totalContributions"]
+
+          now = datetime.now(timezone.utc)
+          stamp = now.strftime("updated %H:%M UTC")
+
+          with open("assets/telemetry.svg") as f:
+              svg = f.read()
+
+          def repl(tag, value):
+              return re.sub(
+                  rf'(<!--{tag}-->).*?(<!--/{tag}-->)',
+                  lambda m: m.group(1) + str(value) + m.group(2),
+                  svg, flags=re.S,
+              )
+
+          for tag, value in (
+              ("SHIPPED", shipped_n),
+              ("CONTRIB", contrib_n),
+              ("FOLLOWERS", followers_n),
+              ("STARS", stars),
+              ("UPDATED", stamp),
+          ):
+              svg = re.sub(
+                  rf'(<!--{tag}-->).*?(<!--/{tag}-->)',
+                  lambda m: m.group(1) + str(value) + m.group(2),
+                  svg, flags=re.S,
+              )
+
+          with open("assets/telemetry.svg", "w") as f:
+              f.write(svg)
+
+          print(f"shipped={shipped_n} contrib={contrib_n} followers={followers_n} stars={stars}")
+          PY
+
+      - name: commit and push if changed
+        run: |
+          if git diff --quiet -- assets/telemetry.svg; then
+            echo "no change"
+            exit 0
+          fi
+          git config user.name "Zawwar Sami"
+          git config user.email "zawwarsami16@gmail.com"
+          git add assets/telemetry.svg
+          git commit -m "tick: refresh telemetry"
+          git push
