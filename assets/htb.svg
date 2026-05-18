@@ -44,7 +44,7 @@
     <!-- stat: points -->
     <g transform="translate(280, 76)">
       <text font-size="9" fill="#888" letter-spacing="2">POINTS</text>
-      <text y="32" font-size="28" font-weight="700" fill="#ff003c" filter="url(#hglow)"><!--POINTS-->107<!--/POINTS--></text>
+      <text y="32" font-size="28" font-weight="700" fill="#ff003c" filter="url(#hglow)"><!--POINTS-->121<!--/POINTS--></text>
     </g>
     <line x1="370" y1="68" x2="370" y2="118" stroke="#ff003c" stroke-width="0.5" opacity="0.25"/>
 
