@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="340" viewBox="0 0 900 340">
+  <defs>
+    <linearGradient id="paper" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fafaf7"/>
+      <stop offset="100%" stop-color="#f0efe9"/>
+    </linearGradient>
+  </defs>
+
+  <!-- paper -->
+  <rect width="900" height="340" fill="url(#paper)"/>
+
+  <!-- thin red borders (engineering-drawing style) -->
+  <line x1="40" y1="40" x2="860" y2="40" stroke="#ff003c" stroke-width="0.5"/>
+  <line x1="40" y1="300" x2="860" y2="300" stroke="#ff003c" stroke-width="0.5"/>
+  <line x1="40" y1="40" x2="40" y2="300" stroke="#ff003c" stroke-width="0.5"/>
+  <line x1="860" y1="40" x2="860" y2="300" stroke="#ff003c" stroke-width="0.5"/>
+
+  <!-- inner accent rule -->
+  <line x1="60" y1="70" x2="840" y2="70" stroke="#222" stroke-width="0.4" opacity="0.55"/>
+  <line x1="60" y1="266" x2="840" y2="266" stroke="#222" stroke-width="0.4" opacity="0.55"/>
+
+  <!-- folio-style header -->
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace" fill="#222">
+    <text x="60" y="62" font-size="10" letter-spacing="3" opacity="0.6">ANTEROOM · STUDIO ·  FOLIO 01</text>
+    <text x="840" y="62" font-size="10" letter-spacing="3" opacity="0.6" text-anchor="end">CANADA  ·  2026</text>
+  </g>
+
+  <!-- centerpiece name in calm serif weight -->
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace" text-anchor="middle">
+    <text x="450" y="172" font-size="58" font-weight="600" fill="#111" letter-spacing="16">ZAWWAR · SAMI</text>
+  </g>
+
+  <!-- small red accent dot, the only color event -->
+  <circle cx="450" cy="200" r="3" fill="#ff003c"/>
+
+  <!-- tagline -->
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace" text-anchor="middle" fill="#444">
+    <text x="450" y="226" font-size="12" letter-spacing="5">INDEPENDENT  ENGINEER</text>
+  </g>
+
+  <!-- footer triplet -->
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace" fill="#666">
+    <text x="60" y="290" font-size="9" letter-spacing="2" opacity="0.7">reasoning systems · operator tools · the long form</text>
+    <text x="840" y="290" font-size="9" letter-spacing="2" opacity="0.7" text-anchor="end">github.com/Zawwarsami16</text>
+  </g>
+</svg>

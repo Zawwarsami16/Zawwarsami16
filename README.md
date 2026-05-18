@@ -1,7 +1,11 @@
 <div align="center">
 
 <a href="https://github.com/Zawwarsami16">
-  <img src="./assets/hero.svg" alt="Zawwar Sami — anteroom://main" width="900" height="340" style="max-width:100%"/>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/hero.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/hero-light.svg" />
+    <img src="./assets/hero.svg" alt="Zawwar Sami — anteroom://main" width="900" height="340" style="max-width:100%"/>
+  </picture>
 </a>
 
 <br/>
@@ -123,6 +127,57 @@ Anteroom Oracle. Daily Anthropic SDK / vercel / ollama work. Climbing HTB. Writi
 
 <br/>
 
+### <kbd>▎</kbd> The operational mesh
+
+```mermaid
+%%{init: {'theme':'base','themeVariables':{'primaryColor':'#0a0a0a','primaryTextColor':'#ff003c','primaryBorderColor':'#ff003c','lineColor':'#ff003c','secondaryColor':'#0a0a0a','tertiaryColor':'#0a0a0a','fontFamily':'ui-monospace, monospace','fontSize':'13px'}}}%%
+flowchart LR
+    Z(["▎ZAWWAR"]):::self
+    VPS["VPS · Singapore<br/>Ubuntu 24.04"]:::infra
+    CRON["wake.sh<br/>every 4h"]:::infra
+    CLAUDE["Claude<br/>session"]:::brain
+    ZAI["ZAI<br/>autonomous"]:::brain
+    TG["Telegram<br/>bot"]:::comm
+    GH["GitHub<br/>auto-backup"]:::out
+    SS["Substack"]:::out
+    HTB["HTB lab<br/>tun0"]:::out
+    LI["LinkedIn"]:::out
+
+    Z -.->|directives| TG
+    TG -->|inbox| VPS
+    CRON -->|wakes| CLAUDE
+    CRON -->|wakes| ZAI
+    VPS -.-> CRON
+    CLAUDE -->|commits| GH
+    CLAUDE -->|drafts| SS
+    CLAUDE -->|solves| HTB
+    CLAUDE -->|posts| LI
+    ZAI -->|briefs| Z
+    GH -.->|hourly backup| VPS
+
+    classDef self fill:#ff003c,stroke:#ff003c,color:#0a0a0a,stroke-width:2px
+    classDef infra fill:#0a0a0a,stroke:#ff003c,color:#ff003c
+    classDef brain fill:#0a0a0a,stroke:#ff003c,color:#e8e8e8,stroke-width:1.5px
+    classDef comm fill:#0a0a0a,stroke:#ff003c,color:#999
+    classDef out fill:#0a0a0a,stroke:#ff003c,color:#e8e8e8
+```
+
+<br/>
+
+<div align="center">
+
+<a href="./assets/sigil.stl">
+  <sub>▎ <strong>studio sigil</strong> — click to rotate the 3D model on GitHub</sub>
+</a>
+
+</div>
+
+<br/>
+
+<div align="center"><img src="./assets/divider.svg" alt="" width="900" height="32" style="max-width:100%"/></div>
+
+<br/>
+
 <div align="center">
 
 <a href="https://zawwarsami.com"><img src="https://img.shields.io/badge/-site-ff003c?style=flat-square&labelColor=0a0a0a&logo=safari&logoColor=ff003c" /></a>&nbsp;
@@ -138,3 +193,13 @@ Anteroom Oracle. Daily Anthropic SDK / vercel / ollama work. Climbing HTB. Writi
 <sub><code>echo $USER && uname -a</code> · <a href="https://komarev.com/ghpvc/?username=Zawwarsami16&color=ff003c&style=flat-square&label=visitors">visitors</a></sub>
 
 </div>
+
+<br/>
+
+<details>
+<summary><sub><code>:: stream tail (click)</code></sub></summary>
+<br/>
+<div align="center">
+  <img src="./assets/glitch.svg" alt="" width="900" height="140" style="max-width:100%"/>
+</div>
+</details>
