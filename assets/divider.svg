@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 24" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="dg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff003c" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ff003c" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#ff003c" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="g"><feGaussianBlur stdDeviation="1.5"/></filter>
+  </defs>
+  <line x1="0" y1="12" x2="900" y2="12" stroke="url(#dg)" stroke-width="1.4"/>
+  <circle cx="450" cy="12" r="3" fill="#ff003c" filter="url(#g)">
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="450" cy="12" r="1.5" fill="#ff003c"/>
+</svg>
