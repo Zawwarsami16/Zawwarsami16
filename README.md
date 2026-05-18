@@ -127,43 +127,6 @@ Anteroom Oracle. Daily Anthropic SDK / vercel / ollama work. Climbing HTB. Writi
 
 <br/>
 
-### <kbd>▎</kbd> The operational mesh
-
-```mermaid
-%%{init: {'theme':'base','themeVariables':{'primaryColor':'#0a0a0a','primaryTextColor':'#ff003c','primaryBorderColor':'#ff003c','lineColor':'#ff003c','secondaryColor':'#0a0a0a','tertiaryColor':'#0a0a0a','fontFamily':'ui-monospace, monospace','fontSize':'13px'}}}%%
-flowchart LR
-    Z(["▎ZAWWAR"]):::self
-    VPS["VPS · Singapore<br/>Ubuntu 24.04"]:::infra
-    CRON["wake.sh<br/>every 4h"]:::infra
-    CLAUDE["Claude<br/>session"]:::brain
-    ZAI["ZAI<br/>autonomous"]:::brain
-    TG["Telegram<br/>bot"]:::comm
-    GH["GitHub<br/>auto-backup"]:::out
-    SS["Substack"]:::out
-    HTB["HTB lab<br/>tun0"]:::out
-    LI["LinkedIn"]:::out
-
-    Z -.->|directives| TG
-    TG -->|inbox| VPS
-    CRON -->|wakes| CLAUDE
-    CRON -->|wakes| ZAI
-    VPS -.-> CRON
-    CLAUDE -->|commits| GH
-    CLAUDE -->|drafts| SS
-    CLAUDE -->|solves| HTB
-    CLAUDE -->|posts| LI
-    ZAI -->|briefs| Z
-    GH -.->|hourly backup| VPS
-
-    classDef self fill:#ff003c,stroke:#ff003c,color:#0a0a0a,stroke-width:2px
-    classDef infra fill:#0a0a0a,stroke:#ff003c,color:#ff003c
-    classDef brain fill:#0a0a0a,stroke:#ff003c,color:#e8e8e8,stroke-width:1.5px
-    classDef comm fill:#0a0a0a,stroke:#ff003c,color:#999
-    classDef out fill:#0a0a0a,stroke:#ff003c,color:#e8e8e8
-```
-
-<br/>
-
 <div align="center">
 
 <a href="./assets/sigil.stl">
