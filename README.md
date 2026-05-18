@@ -16,6 +16,8 @@
 
 Independent engineer in Canada. I build reasoning systems for operators — tools that compress what a research desk does into something a single person can run. Anteroom Studio is the studio. ZAI is what is inside it. The public surface below is the half I am willing to put a name on.
 
+<sub>Longer answer: [WHO.md](./WHO.md).</sub>
+
 <br/>
 
 <div align="center"><img src="./assets/divider.svg" alt="" width="900" height="32" style="max-width:100%"/></div>
