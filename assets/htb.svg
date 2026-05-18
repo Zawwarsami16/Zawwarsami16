@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="180" viewBox="0 0 900 180">
+  <defs>
+    <pattern id="hgrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ff003c" stroke-width="0.4" opacity="0.08"/>
+    </pattern>
+    <filter id="hglow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="1.2"/>
+    </filter>
+    <linearGradient id="bar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff003c" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#ff003c" stop-opacity="1"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="180" fill="#0a0a0a"/>
+  <rect width="900" height="180" fill="url(#hgrid)"/>
+
+  <g stroke="#ff003c" stroke-width="1.2" fill="none" opacity="0.7">
+    <path d="M 12 12 L 12 28 M 12 12 L 28 12"/>
+    <path d="M 888 12 L 888 28 M 888 12 L 872 12"/>
+    <path d="M 12 168 L 12 152 M 12 168 L 28 168"/>
+    <path d="M 888 168 L 888 152 M 888 168 L 872 168"/>
+  </g>
+
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace">
+    <circle cx="40" cy="28" r="3" fill="#ff003c">
+      <animate attributeName="opacity" values="1;0.3;1" dur="1.6s" repeatCount="indefinite"/>
+    </circle>
+    <text x="52" y="32" font-size="10" fill="#ff003c" letter-spacing="3" font-weight="700">▎HACK THE BOX</text>
+    <text x="860" y="32" font-size="10" fill="#666" letter-spacing="2" text-anchor="end">#2469522 · <!--NAME-->ZAWWAR<!--/NAME--> · <!--COUNTRY-->CA<!--/COUNTRY--></text>
+    <line x1="32" y1="48" x2="868" y2="48" stroke="#ff003c" stroke-width="0.5" opacity="0.3"/>
+  </g>
+
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace">
+    <!-- rank badge -->
+    <g transform="translate(60, 70)">
+      <rect x="0" y="0" width="180" height="46" fill="none" stroke="#ff003c" stroke-width="1.2" rx="2"/>
+      <text x="10" y="20" font-size="9" fill="#888" letter-spacing="2">CURRENT TIER</text>
+      <text x="10" y="38" font-size="17" fill="#ff003c" font-weight="700" filter="url(#hglow)" letter-spacing="3"><!--RANK-->HACKER<!--/RANK--></text>
+      <text x="172" y="38" font-size="11" fill="#666" text-anchor="end">id:<!--RANKID-->3<!--/RANKID--></text>
+    </g>
+
+    <!-- stat: points -->
+    <g transform="translate(280, 76)">
+      <text font-size="9" fill="#888" letter-spacing="2">POINTS</text>
+      <text y="32" font-size="28" font-weight="700" fill="#ff003c" filter="url(#hglow)"><!--POINTS-->102<!--/POINTS--></text>
+    </g>
+    <line x1="370" y1="68" x2="370" y2="118" stroke="#ff003c" stroke-width="0.5" opacity="0.25"/>
+
+    <!-- stat: user owns -->
+    <g transform="translate(400, 76)">
+      <text font-size="9" fill="#888" letter-spacing="2">USER OWNS</text>
+      <text y="32" font-size="28" font-weight="700" fill="#ff003c" filter="url(#hglow)"><!--USEROWNS-->17<!--/USEROWNS--></text>
+    </g>
+    <line x1="510" y1="68" x2="510" y2="118" stroke="#ff003c" stroke-width="0.5" opacity="0.25"/>
+
+    <!-- stat: system owns -->
+    <g transform="translate(540, 76)">
+      <text font-size="9" fill="#888" letter-spacing="2">SYSTEM OWNS</text>
+      <text y="32" font-size="28" font-weight="700" fill="#ff003c" filter="url(#hglow)"><!--SYSOWNS-->13<!--/SYSOWNS--></text>
+    </g>
+    <line x1="660" y1="68" x2="660" y2="118" stroke="#ff003c" stroke-width="0.5" opacity="0.25"/>
+
+    <!-- stat: global rank -->
+    <g transform="translate(700, 76)">
+      <text font-size="9" fill="#888" letter-spacing="2">GLOBAL RANK</text>
+      <text y="32" font-size="28" font-weight="700" fill="#ff003c" filter="url(#hglow)">#<!--RANKING-->911<!--/RANKING--></text>
+    </g>
+  </g>
+
+  <!-- progress to next rank -->
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace" transform="translate(60, 138)">
+    <text font-size="9" fill="#888" letter-spacing="2">→ NEXT TIER</text>
+    <text x="92" y="0" font-size="11" fill="#ff003c" font-weight="700" letter-spacing="2"><!--NEXTRANK-->PRO HACKER<!--/NEXTRANK--></text>
+    <text x="780" y="0" font-size="11" fill="#888" letter-spacing="2" text-anchor="end"><!--PROGRESS-->28<!--/PROGRESS-->%</text>
+
+    <!-- progress bar track -->
+    <rect x="0" y="10" width="780" height="6" fill="#1a1a1a" stroke="#ff003c" stroke-width="0.5" stroke-opacity="0.4"/>
+    <!-- progress bar fill -->
+    <rect x="0" y="10" width="218" height="6" fill="url(#bar)" filter="url(#hglow)">
+      <animate attributeName="width" from="0" to="218" dur="1.5s" fill="freeze"/>
+      <set attributeName="width" to="218" begin="0s"/>
+    </rect>
+    <!-- bar marker -->
+    <rect x="216" y="6" width="2" height="14" fill="#ff003c">
+      <animate attributeName="x" from="-2" to="216" dur="1.5s" fill="freeze"/>
+    </rect>
+  </g>
+</svg>
