@@ -1,0 +1,47 @@
+name: refresh hero clock
+
+on:
+  schedule:
+    - cron: "0 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: update timestamps in hero.svg
+        run: |
+          python3 - <<'PY'
+          import re
+          from datetime import datetime, timezone
+          now = datetime.now(timezone.utc)
+          clock = now.strftime("%H:%M UTC")
+          lastlogin = now.strftime("Last login: %a %b %d %Y %H:%M:%S from cloudflare")
+          with open("assets/hero.svg") as f:
+              svg = f.read()
+          svg = re.sub(r'(<!--CLOCK-->).*?(<!--/CLOCK-->)', lambda m: m.group(1) + clock + m.group(2), svg, flags=re.S)
+          svg = re.sub(r'(<!--LASTLOGIN-->).*?(<!--/LASTLOGIN-->)', lambda m: m.group(1) + lastlogin + m.group(2), svg, flags=re.S)
+          with open("assets/hero.svg", "w") as f:
+              f.write(svg)
+          print(f"clock={clock}")
+          print(f"lastlogin={lastlogin}")
+          PY
+
+      - name: commit and push if changed
+        run: |
+          if git diff --quiet -- assets/hero.svg; then
+            echo "no change"
+            exit 0
+          fi
+          git config user.name "Zawwar Sami"
+          git config user.email "zawwarsami16@gmail.com"
+          git add assets/hero.svg
+          git commit -m "tick: refresh hero clock"
+          git push
