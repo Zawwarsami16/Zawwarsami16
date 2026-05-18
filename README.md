@@ -1,8 +1,12 @@
 <div align="center">
 
 <a href="https://github.com/Zawwarsami16">
-  <img src="./assets/hero.svg" alt="Zawwar Sami" width="100%"/>
+  <img src="./assets/hero.svg" alt="Zawwar Sami — anteroom://main" width="900" height="340" style="max-width:100%"/>
 </a>
+
+<br/>
+
+<img src="./assets/transmission.svg" alt="" width="900" height="44" style="max-width:100%"/>
 
 </div>
 
