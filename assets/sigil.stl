@@ -1,0 +1,170 @@
+solid zawwar_sami_sigil
+  facet normal -0.394362 -0.614749 -0.683054
+    outer loop
+      vertex 0.000000 24.000000 0.000000
+      vertex 7.794229 14.000000 4.500000
+      vertex 0.000000 14.000000 9.000000
+    endloop
+  endfacet
+  facet normal 0.394362 -0.614749 -0.683054
+    outer loop
+      vertex 0.000000 24.000000 0.000000
+      vertex 0.000000 14.000000 9.000000
+      vertex -7.794229 14.000000 4.500000
+    endloop
+  endfacet
+  facet normal 0.788723 -0.614749 -0.000000
+    outer loop
+      vertex 0.000000 24.000000 0.000000
+      vertex -7.794229 14.000000 4.500000
+      vertex -7.794229 14.000000 -4.500000
+    endloop
+  endfacet
+  facet normal 0.394362 -0.614749 0.683054
+    outer loop
+      vertex 0.000000 24.000000 0.000000
+      vertex -7.794229 14.000000 -4.500000
+      vertex -0.000000 14.000000 -9.000000
+    endloop
+  endfacet
+  facet normal -0.394362 -0.614749 0.683054
+    outer loop
+      vertex 0.000000 24.000000 0.000000
+      vertex -0.000000 14.000000 -9.000000
+      vertex 7.794229 14.000000 -4.500000
+    endloop
+  endfacet
+  facet normal -0.788723 -0.614749 -0.000000
+    outer loop
+      vertex 0.000000 24.000000 0.000000
+      vertex 7.794229 14.000000 -4.500000
+      vertex 7.794229 14.000000 4.500000
+    endloop
+  endfacet
+  facet normal -0.497701 -0.095783 -0.862044
+    outer loop
+      vertex 7.794229 14.000000 4.500000
+      vertex 9.526279 -4.000000 5.500000
+      vertex 0.000000 -4.000000 11.000000
+    endloop
+  endfacet
+  facet normal -0.497701 -0.095783 -0.862044
+    outer loop
+      vertex 7.794229 14.000000 4.500000
+      vertex 0.000000 -4.000000 11.000000
+      vertex 0.000000 14.000000 9.000000
+    endloop
+  endfacet
+  facet normal 0.497701 -0.095783 -0.862044
+    outer loop
+      vertex 0.000000 14.000000 9.000000
+      vertex 0.000000 -4.000000 11.000000
+      vertex -9.526279 -4.000000 5.500000
+    endloop
+  endfacet
+  facet normal 0.497701 -0.095783 -0.862044
+    outer loop
+      vertex 0.000000 14.000000 9.000000
+      vertex -9.526279 -4.000000 5.500000
+      vertex -7.794229 14.000000 4.500000
+    endloop
+  endfacet
+  facet normal 0.995402 -0.095783 -0.000000
+    outer loop
+      vertex -7.794229 14.000000 4.500000
+      vertex -9.526279 -4.000000 5.500000
+      vertex -9.526279 -4.000000 -5.500000
+    endloop
+  endfacet
+  facet normal 0.995402 -0.095783 -0.000000
+    outer loop
+      vertex -7.794229 14.000000 4.500000
+      vertex -9.526279 -4.000000 -5.500000
+      vertex -7.794229 14.000000 -4.500000
+    endloop
+  endfacet
+  facet normal 0.497701 -0.095783 0.862044
+    outer loop
+      vertex -7.794229 14.000000 -4.500000
+      vertex -9.526279 -4.000000 -5.500000
+      vertex -0.000000 -4.000000 -11.000000
+    endloop
+  endfacet
+  facet normal 0.497701 -0.095783 0.862044
+    outer loop
+      vertex -7.794229 14.000000 -4.500000
+      vertex -0.000000 -4.000000 -11.000000
+      vertex -0.000000 14.000000 -9.000000
+    endloop
+  endfacet
+  facet normal -0.497701 -0.095783 0.862044
+    outer loop
+      vertex -0.000000 14.000000 -9.000000
+      vertex -0.000000 -4.000000 -11.000000
+      vertex 9.526279 -4.000000 -5.500000
+    endloop
+  endfacet
+  facet normal -0.497701 -0.095783 0.862044
+    outer loop
+      vertex -0.000000 14.000000 -9.000000
+      vertex 9.526279 -4.000000 -5.500000
+      vertex 7.794229 14.000000 -4.500000
+    endloop
+  endfacet
+  facet normal -0.995402 -0.095783 0.000000
+    outer loop
+      vertex 7.794229 14.000000 -4.500000
+      vertex 9.526279 -4.000000 -5.500000
+      vertex 9.526279 -4.000000 5.500000
+    endloop
+  endfacet
+  facet normal -0.995402 -0.095783 -0.000000
+    outer loop
+      vertex 7.794229 14.000000 -4.500000
+      vertex 9.526279 -4.000000 5.500000
+      vertex 7.794229 14.000000 4.500000
+    endloop
+  endfacet
+  facet normal -0.391605 0.621757 -0.678280
+    outer loop
+      vertex 0.000000 -16.000000 0.000000
+      vertex 0.000000 -4.000000 11.000000
+      vertex 9.526279 -4.000000 5.500000
+    endloop
+  endfacet
+  facet normal 0.391605 0.621757 -0.678280
+    outer loop
+      vertex 0.000000 -16.000000 0.000000
+      vertex -9.526279 -4.000000 5.500000
+      vertex 0.000000 -4.000000 11.000000
+    endloop
+  endfacet
+  facet normal 0.783210 0.621757 -0.000000
+    outer loop
+      vertex 0.000000 -16.000000 0.000000
+      vertex -9.526279 -4.000000 -5.500000
+      vertex -9.526279 -4.000000 5.500000
+    endloop
+  endfacet
+  facet normal 0.391605 0.621757 0.678280
+    outer loop
+      vertex 0.000000 -16.000000 0.000000
+      vertex -0.000000 -4.000000 -11.000000
+      vertex -9.526279 -4.000000 -5.500000
+    endloop
+  endfacet
+  facet normal -0.391605 0.621757 0.678280
+    outer loop
+      vertex 0.000000 -16.000000 0.000000
+      vertex 9.526279 -4.000000 -5.500000
+      vertex -0.000000 -4.000000 -11.000000
+    endloop
+  endfacet
+  facet normal -0.783210 0.621757 0.000000
+    outer loop
+      vertex 0.000000 -16.000000 0.000000
+      vertex 9.526279 -4.000000 5.500000
+      vertex 9.526279 -4.000000 -5.500000
+    endloop
+  endfacet
+endsolid zawwar_sami_sigil
