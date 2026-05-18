@@ -1,16 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 24" preserveAspectRatio="none">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="32" viewBox="0 0 900 32">
   <defs>
     <linearGradient id="dg" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#ff003c" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#ff003c" stop-opacity="0.85"/>
+      <stop offset="15%" stop-color="#ff003c" stop-opacity="0.4"/>
+      <stop offset="50%" stop-color="#ff003c" stop-opacity="1"/>
+      <stop offset="85%" stop-color="#ff003c" stop-opacity="0.4"/>
       <stop offset="100%" stop-color="#ff003c" stop-opacity="0"/>
     </linearGradient>
-    <filter id="g"><feGaussianBlur stdDeviation="1.5"/></filter>
+    <filter id="g" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
   </defs>
-  <line x1="0" y1="12" x2="900" y2="12" stroke="url(#dg)" stroke-width="1.4"/>
-  <circle cx="450" cy="12" r="3" fill="#ff003c" filter="url(#g)">
-    <animate attributeName="opacity" values="0.4;1;0.4" dur="1.8s" repeatCount="indefinite"/>
+
+  <!-- main line -->
+  <rect x="0" y="15" width="900" height="2" fill="url(#dg)"/>
+
+  <!-- left tick -->
+  <line x1="180" y1="11" x2="180" y2="21" stroke="#ff003c" stroke-width="1.2" opacity="0.6"/>
+  <line x1="220" y1="13" x2="220" y2="19" stroke="#ff003c" stroke-width="1" opacity="0.4"/>
+
+  <!-- right tick -->
+  <line x1="680" y1="13" x2="680" y2="19" stroke="#ff003c" stroke-width="1" opacity="0.4"/>
+  <line x1="720" y1="11" x2="720" y2="21" stroke="#ff003c" stroke-width="1.2" opacity="0.6"/>
+
+  <!-- center glow halo -->
+  <circle cx="450" cy="16" r="6" fill="#ff003c" filter="url(#g)" opacity="0.55">
+    <animate attributeName="opacity" values="0.25;0.7;0.25" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="4;7;4" dur="2s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="450" cy="12" r="1.5" fill="#ff003c"/>
+
+  <!-- center solid dot -->
+  <circle cx="450" cy="16" r="2.2" fill="#ff003c"/>
+
+  <!-- small flanking dots -->
+  <circle cx="430" cy="16" r="1" fill="#ff003c" opacity="0.7"/>
+  <circle cx="470" cy="16" r="1" fill="#ff003c" opacity="0.7"/>
 </svg>
