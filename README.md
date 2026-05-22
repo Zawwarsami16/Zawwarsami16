@@ -2,9 +2,9 @@
 
 <a href="https://github.com/Zawwarsami16">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/hero.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="./assets/hero-light.svg" />
-    <img src="./assets/hero.svg" alt="Zawwar Sami — anteroom://main" width="900" height="340" style="max-width:100%"/>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-flux-v1.png" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/hero-flux-v1.png" />
+    <img src="./assets/hero-flux-v1.png" alt="Zawwar Sami — anteroom://main" width="900" height="506" style="max-width:100%"/>
   </picture>
 </a>
 
