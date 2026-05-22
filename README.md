@@ -74,6 +74,15 @@ Personal site. [zawwarsami.com](https://zawwarsami.com).
   <tr>
     <td width="50%" valign="top">
 
+#### `>` [zai-memory-hub](https://github.com/Zawwarsami16/zai-memory-hub)
+
+Self-hosted MCP memory store shared across AI assistants. One Postgres, one bearer token, one dashboard. Live at [hub.zawwarsami.com](https://hub.zawwarsami.com).
+
+![hub](https://img.shields.io/github/stars/Zawwarsami16/zai-memory-hub?style=flat-square&color=ff003c&labelColor=0a0a0a&label=stars) ![py](https://img.shields.io/badge/python-0a0a0a?style=flat-square&logo=python&logoColor=ff003c&label=lang&labelColor=0a0a0a&color=ff003c)
+
+</td>
+    <td width="50%" valign="top">
+
 #### `>` [Zai-Hacking-game](https://github.com/Zawwarsami16/Zai-Hacking-game)
 
 Terminal-feel hacker RPG. Real shell, fake stakes.
@@ -81,13 +90,35 @@ Terminal-feel hacker RPG. Real shell, fake stakes.
 ![game](https://img.shields.io/github/stars/Zawwarsami16/Zai-Hacking-game?style=flat-square&color=ff003c&labelColor=0a0a0a&label=stars) ![js](https://img.shields.io/badge/javascript-0a0a0a?style=flat-square&logo=javascript&logoColor=ff003c&label=lang&labelColor=0a0a0a&color=ff003c)
 
 </td>
-    <td width="50%" valign="top">
+  </tr>
+</table>
 
-#### `>` on the bench
+<br/>
 
-Anteroom Oracle. Daily Anthropic SDK / vercel / ollama work. Climbing HTB. Writing *Unwrapping What Exists* on the side.
+<div align="center"><img src="./assets/divider.svg" alt="" width="900" height="32" style="max-width:100%"/></div>
 
-![status](https://img.shields.io/badge/status-compiling-ff003c?style=flat-square&labelColor=0a0a0a) ![focus](https://img.shields.io/badge/focus-ops%20%2F%20markets-ff003c?style=flat-square&labelColor=0a0a0a)
+<br/>
+
+### <kbd>▎</kbd> Writing
+
+<table>
+  <tr>
+    <td width="50%" valign="top" style="border-top: 2px solid #ff003c;">
+
+#### `>` [Two AIs](https://zawwar16.substack.com/p/two-ais)
+
+Artificial vs. Autonomous Intelligence — why the words we use shape what we build, and the case for personal AI as its own category.
+
+![substack](https://img.shields.io/badge/substack-2026--05--22-ff003c?style=flat-square&labelColor=0a0a0a&logo=substack&logoColor=ff003c)
+
+</td>
+    <td width="50%" valign="top" style="border-top: 2px solid #ff003c;">
+
+#### `>` [The Pause, the Substrate, the Cooperative Mind](https://zawwar16.substack.com/p/pause-substrate-cooperative-mind)
+
+Three philosophical observations the present moment has made unusually visible — on speech, the body, and why a finite being fights. Held lightly.
+
+![substack](https://img.shields.io/badge/substack-2026--05--26-ff003c?style=flat-square&labelColor=0a0a0a&logo=substack&logoColor=ff003c)
 
 </td>
   </tr>
@@ -144,7 +175,7 @@ Anteroom Oracle. Daily Anthropic SDK / vercel / ollama work. Climbing HTB. Writi
 <div align="center">
 
 <a href="https://zawwarsami.com"><img src="https://img.shields.io/badge/-site-ff003c?style=flat-square&labelColor=0a0a0a&logo=safari&logoColor=ff003c" /></a>&nbsp;
-<a href="https://substack.com/@zawwarsami"><img src="https://img.shields.io/badge/-substack-ff003c?style=flat-square&labelColor=0a0a0a&logo=substack&logoColor=ff003c" /></a>&nbsp;
+<a href="https://zawwar16.substack.com"><img src="https://img.shields.io/badge/-substack-ff003c?style=flat-square&labelColor=0a0a0a&logo=substack&logoColor=ff003c" /></a>&nbsp;<a href="https://hub.zawwarsami.com"><img src="https://img.shields.io/badge/-hub-ff003c?style=flat-square&labelColor=0a0a0a&logo=postgresql&logoColor=ff003c" /></a>&nbsp;
 <a href="https://app.hackthebox.com/public/users/2469522"><img src="https://img.shields.io/badge/-htb-ff003c?style=flat-square&labelColor=0a0a0a&logo=hackthebox&logoColor=ff003c" /></a>&nbsp;
 <a href="https://www.linkedin.com/in/zawwarsami"><img src="https://img.shields.io/badge/-linkedin-ff003c?style=flat-square&labelColor=0a0a0a&logo=linkedin&logoColor=ff003c" /></a>&nbsp;
 <a href="https://twitter.com/Kh4nZawwar"><img src="https://img.shields.io/badge/-x-ff003c?style=flat-square&labelColor=0a0a0a&logo=x&logoColor=ff003c" /></a>&nbsp;
