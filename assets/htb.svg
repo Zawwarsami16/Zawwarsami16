@@ -73,18 +73,18 @@
   <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace" transform="translate(60, 138)">
     <text font-size="9" fill="#888" letter-spacing="2">→ NEXT TIER</text>
     <text x="92" y="0" font-size="11" fill="#ff003c" font-weight="700" letter-spacing="2"><!--NEXTRANK-->PRO HACKER<!--/NEXTRANK--></text>
-    <text x="780" y="0" font-size="11" fill="#888" letter-spacing="2" text-anchor="end"><!--PROGRESS-->97<!--/PROGRESS-->%</text>
+    <text x="780" y="0" font-size="11" fill="#888" letter-spacing="2" text-anchor="end"><!--PROGRESS-->96<!--/PROGRESS-->%</text>
 
     <!-- progress bar track -->
     <rect x="0" y="10" width="780" height="6" fill="#1a1a1a" stroke="#ff003c" stroke-width="0.5" stroke-opacity="0.4"/>
     <!-- progress bar fill -->
-    <rect x="0" y="10" width="757" height="6" fill="url(#bar)" filter="url(#hglow)">
-      <animate attributeName="width" from="0" to="757" dur="1.5s" fill="freeze"/>
-      <set attributeName="width" to="757" begin="0s"/>
+    <rect x="0" y="10" width="749" height="6" fill="url(#bar)" filter="url(#hglow)">
+      <animate attributeName="width" from="0" to="749" dur="1.5s" fill="freeze"/>
+      <set attributeName="width" to="749" begin="0s"/>
     </rect>
     <!-- bar marker -->
-    <rect x="755" y="6" width="2" height="14" fill="#ff003c">
-      <animate attributeName="x" from="-2" to="755" dur="1.5s" fill="freeze"/>
+    <rect x="747" y="6" width="2" height="14" fill="#ff003c">
+      <animate attributeName="x" from="-2" to="747" dur="1.5s" fill="freeze"/>
     </rect>
   </g>
 </svg>
