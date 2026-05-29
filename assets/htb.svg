@@ -51,21 +51,21 @@
     <!-- stat: user owns -->
     <g transform="translate(400, 76)">
       <text font-size="9" fill="#888" letter-spacing="2">USER OWNS</text>
-      <text y="32" font-size="28" font-weight="700" fill="#ff003c" filter="url(#hglow)"><!--USEROWNS-->65<!--/USEROWNS--></text>
+      <text y="32" font-size="28" font-weight="700" fill="#ff003c" filter="url(#hglow)"><!--USEROWNS-->66<!--/USEROWNS--></text>
     </g>
     <line x1="510" y1="68" x2="510" y2="118" stroke="#ff003c" stroke-width="0.5" opacity="0.25"/>
 
     <!-- stat: system owns -->
     <g transform="translate(540, 76)">
       <text font-size="9" fill="#888" letter-spacing="2">SYSTEM OWNS</text>
-      <text y="32" font-size="28" font-weight="700" fill="#ff003c" filter="url(#hglow)"><!--SYSOWNS-->56<!--/SYSOWNS--></text>
+      <text y="32" font-size="28" font-weight="700" fill="#ff003c" filter="url(#hglow)"><!--SYSOWNS-->57<!--/SYSOWNS--></text>
     </g>
     <line x1="660" y1="68" x2="660" y2="118" stroke="#ff003c" stroke-width="0.5" opacity="0.25"/>
 
     <!-- stat: global rank -->
     <g transform="translate(700, 76)">
       <text font-size="9" fill="#888" letter-spacing="2">GLOBAL RANK</text>
-      <text y="32" font-size="28" font-weight="700" fill="#ff003c" filter="url(#hglow)">#<!--RANKING-->725<!--/RANKING--></text>
+      <text y="32" font-size="28" font-weight="700" fill="#ff003c" filter="url(#hglow)">#<!--RANKING-->729<!--/RANKING--></text>
     </g>
   </g>
 
