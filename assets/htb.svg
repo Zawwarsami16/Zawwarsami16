@@ -58,7 +58,7 @@
     <!-- stat: system owns -->
     <g transform="translate(540, 76)">
       <text font-size="9" fill="#888" letter-spacing="2">SYSTEM OWNS</text>
-      <text y="32" font-size="28" font-weight="700" fill="#ff003c" filter="url(#hglow)"><!--SYSOWNS-->94<!--/SYSOWNS--></text>
+      <text y="32" font-size="28" font-weight="700" fill="#ff003c" filter="url(#hglow)"><!--SYSOWNS-->95<!--/SYSOWNS--></text>
     </g>
     <line x1="660" y1="68" x2="660" y2="118" stroke="#ff003c" stroke-width="0.5" opacity="0.25"/>
 
