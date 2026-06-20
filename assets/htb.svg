@@ -37,14 +37,14 @@
     <g transform="translate(60, 70)">
       <rect x="0" y="0" width="180" height="46" fill="none" stroke="#ff003c" stroke-width="1.2" rx="2"/>
       <text x="10" y="20" font-size="9" fill="#888" letter-spacing="2">CURRENT TIER</text>
-      <text x="10" y="38" font-size="17" fill="#ff003c" font-weight="700" filter="url(#hglow)" letter-spacing="3"><!--RANK-->PRO HACKER<!--/RANK--></text>
-      <text x="172" y="38" font-size="11" fill="#666" text-anchor="end">id:<!--RANKID-->4<!--/RANKID--></text>
+      <text x="10" y="38" font-size="17" fill="#ff003c" font-weight="700" filter="url(#hglow)" letter-spacing="3"><!--RANK-->ELITE HACKER<!--/RANK--></text>
+      <text x="172" y="38" font-size="11" fill="#666" text-anchor="end">id:<!--RANKID-->5<!--/RANKID--></text>
     </g>
 
     <!-- stat: points -->
     <g transform="translate(280, 76)">
       <text font-size="9" fill="#888" letter-spacing="2">POINTS</text>
-      <text y="32" font-size="28" font-weight="700" fill="#ff003c" filter="url(#hglow)"><!--POINTS-->1065<!--/POINTS--></text>
+      <text y="32" font-size="28" font-weight="700" fill="#ff003c" filter="url(#hglow)"><!--POINTS-->1151<!--/POINTS--></text>
     </g>
     <line x1="370" y1="68" x2="370" y2="118" stroke="#ff003c" stroke-width="0.5" opacity="0.25"/>
 
@@ -72,19 +72,19 @@
   <!-- progress to next rank -->
   <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace" transform="translate(60, 138)">
     <text font-size="9" fill="#888" letter-spacing="2">→ NEXT TIER</text>
-    <text x="92" y="0" font-size="11" fill="#ff003c" font-weight="700" letter-spacing="2"><!--NEXTRANK-->ELITE HACKER<!--/NEXTRANK--></text>
-    <text x="780" y="0" font-size="11" fill="#888" letter-spacing="2" text-anchor="end"><!--PROGRESS-->85<!--/PROGRESS-->%</text>
+    <text x="92" y="0" font-size="11" fill="#ff003c" font-weight="700" letter-spacing="2"><!--NEXTRANK-->GURU<!--/NEXTRANK--></text>
+    <text x="780" y="0" font-size="11" fill="#888" letter-spacing="2" text-anchor="end"><!--PROGRESS-->0<!--/PROGRESS-->%</text>
 
     <!-- progress bar track -->
     <rect x="0" y="10" width="780" height="6" fill="#1a1a1a" stroke="#ff003c" stroke-width="0.5" stroke-opacity="0.4"/>
     <!-- progress bar fill -->
-    <rect x="0" y="10" width="663" height="6" fill="url(#bar)" filter="url(#hglow)">
-      <animate attributeName="width" from="0" to="663" dur="1.5s" fill="freeze"/>
-      <set attributeName="width" to="663" begin="0s"/>
+    <rect x="0" y="10" width="0" height="6" fill="url(#bar)" filter="url(#hglow)">
+      <animate attributeName="width" from="0" to="0" dur="1.5s" fill="freeze"/>
+      <set attributeName="width" to="0" begin="0s"/>
     </rect>
     <!-- bar marker -->
-    <rect x="661" y="6" width="2" height="14" fill="#ff003c">
-      <animate attributeName="x" from="-2" to="661" dur="1.5s" fill="freeze"/>
+    <rect x="0" y="6" width="2" height="14" fill="#ff003c">
+      <animate attributeName="x" from="-2" to="0" dur="1.5s" fill="freeze"/>
     </rect>
   </g>
 </svg>
