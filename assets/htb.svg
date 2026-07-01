@@ -65,7 +65,7 @@
     <!-- stat: global rank -->
     <g transform="translate(700, 76)">
       <text font-size="9" fill="#888" letter-spacing="2">GLOBAL RANK</text>
-      <text y="32" font-size="28" font-weight="700" fill="#ff003c" filter="url(#hglow)">#<!--RANKING-->56<!--/RANKING--></text>
+      <text y="32" font-size="28" font-weight="700" fill="#ff003c" filter="url(#hglow)">#<!--RANKING-->57<!--/RANKING--></text>
     </g>
   </g>
 
