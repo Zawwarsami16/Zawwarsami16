@@ -49,7 +49,7 @@
     </circle>
     <text x="60" y="36" fill="#ff003c" opacity="0.9">anteroom://main</text>
     <text x="450" y="36" fill="#666" text-anchor="middle">— SECURE CHANNEL —</text>
-    <text x="852" y="36" fill="#ff003c" opacity="0.9" text-anchor="end"><!--CLOCK-->16:39 UTC<!--/CLOCK--></text>
+    <text x="852" y="36" fill="#ff003c" opacity="0.9" text-anchor="end"><!--CLOCK-->17:44 UTC<!--/CLOCK--></text>
   </g>
 
   <!-- horizontal divider under status -->
@@ -68,7 +68,7 @@
     <!-- response line -->
     <g opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.7s" dur="0.3s" fill="freeze"/>
-      <text x="40" y="116" fill="#888"><!--LASTLOGIN-->Last login: Sun Jul 19 2026 16:39:45 from cloudflare<!--/LASTLOGIN--></text>
+      <text x="40" y="116" fill="#888"><!--LASTLOGIN-->Last login: Sun Jul 19 2026 17:44:31 from cloudflare<!--/LASTLOGIN--></text>
     </g>
 
     <!-- line 2: prompt + whoami  -->
