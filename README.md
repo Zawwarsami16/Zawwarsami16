@@ -18,7 +18,17 @@
 
 > **Most of the code I run, you cannot see.**
 
-Independent engineer in Canada. I build reasoning systems for operators — tools that compress what a research desk does into something a single person can run. Anteroom Studio is the studio. ZAI is what is inside it. The public surface below is the half I am willing to put a name on.
+I'm Zawwar Sami, an independent researcher and engineer working across philosophy, artificial intelligence, and cybersecurity.
+
+I build systems, publish research, and explore questions that don't always belong to a single field.
+
+My work includes ZAI, persistent AI infrastructure, open-source tools, and practical security research. I also maintain a growing body of independent writing on intelligence, consciousness, and identity.
+
+Anteroom Studio is where much of my engineering work lives.
+
+Research, papers, and projects:
+
+https://zawwarsami.com
 
 <sub>Longer answer: [WHO.md](./WHO.md).</sub>
 
