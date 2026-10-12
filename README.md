@@ -24,7 +24,7 @@ I build systems, publish research, and explore questions that don't always belon
 
 My work includes ZAI, persistent AI infrastructure, open-source tools, and practical security research. I also maintain a growing body of independent writing on intelligence, consciousness, and identity.
 
-Anteroom Studio is where much of my engineering work lives.
+Anteroom Studio, a company founded by ZAI, is where much of my engineering work lives.
 
 Research, papers, and projects:
 
@@ -39,6 +39,12 @@ https://zawwarsami.com
 <br/>
 
 ### <kbd>▎</kbd> Not open to work
+
+**Open to technical and research exchange.** Not looking for employment; interested in people who want to test the work, identify a failure, or question an architectural decision.
+
+**Try an implementation:** [zhub's 10-minute walkthrough](https://github.com/Zawwarsami16/zhub/blob/main/docs/TUTORIAL.md) · [Pocket live demo](https://pocket-tau-sepia.vercel.app)  
+**Challenge an assumption:** [Open engineering challenge #01 — cross-client AI access](https://github.com/Zawwarsami16/zhub/issues/7)  
+**Discuss a research problem:** [shared-agent memory, provenance and access boundaries](https://github.com/Zawwarsami16/zai-memory-hub) · [open a technical question](https://github.com/Zawwarsami16/zai-memory-hub/issues/new)
 
 <table>
   <tr>
