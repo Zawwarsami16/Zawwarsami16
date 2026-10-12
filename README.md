@@ -44,7 +44,8 @@ https://zawwarsami.com
 
 **Try an implementation:** [zhub's 10-minute walkthrough](https://github.com/Zawwarsami16/zhub/blob/main/docs/TUTORIAL.md) · [Pocket live demo](https://pocket-tau-sepia.vercel.app)  
 **Challenge an assumption:** [Open engineering challenge #01 — cross-client AI access](https://github.com/Zawwarsami16/zhub/issues/7)  
-**Discuss a research problem:** [shared-agent memory, provenance and access boundaries](https://github.com/Zawwarsami16/zai-memory-hub) · [join the provenance discussion](https://github.com/Zawwarsami16/zai-memory-hub/issues/17)
+**Discuss a research problem:** [shared-agent memory, provenance and access boundaries](https://github.com/Zawwarsami16/zai-memory-hub) · [join the provenance discussion](https://github.com/Zawwarsami16/zai-memory-hub/issues/17)  
+**Studio research experiments:** [challenge Genesis's agreement score](https://github.com/anteroom-studio/ZAI-Genesis/issues/1) · [review observed versus estimated liquidation data](https://github.com/anteroom-studio/Anteroom-Crypto-Terminal/issues/5)
 
 <table>
   <tr>
