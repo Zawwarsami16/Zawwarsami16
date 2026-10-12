@@ -21,4 +21,6 @@ This sequence asks what makes an artificial agent's continuity and activity insp
 
 **Research question:** What evidence is needed to distinguish a system that can describe a decision from one that can carry it out, within authorized limits, and verify the result?
 
+[**Join the focused discussion**](https://github.com/anteroom-studio/agi-field-notes/issues/1) on memory, continuing agency and execution evidence.
+
 [← Research Universe](../) · [Full writing catalogue](https://zawwarsami.com/writing)
