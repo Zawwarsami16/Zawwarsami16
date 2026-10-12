@@ -30,6 +30,8 @@ Research, papers, and projects:
 
 https://zawwarsami.com
 
+**[Research Universe — A / C / P / S / W / Z](./research-universe/)** · [Selected papers and original records](./research-universe/#selected-editions)
+
 <sub>Longer answer: [WHO.md](./WHO.md).</sub>
 
 <br/>
