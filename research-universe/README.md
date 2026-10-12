@@ -29,7 +29,9 @@ Other publicly listed works remain available through the [writing catalogue](htt
 
 ## Reading, critique, and source integrity
 
-I welcome specific technical or philosophical criticism: a counterexample, an assumption worth testing, a contradiction in the argument, or an experiment with reproducible conditions. For discussion of agent memory and attribution, see [the memory architecture review](https://github.com/Zawwarsami16/zai-memory-hub/issues/17); for a testable seven-engine methodology question, see [ZAI Genesis's research challenge](https://github.com/anteroom-studio/ZAI-Genesis/issues/1).
+I welcome specific technical or philosophical criticism: a counterexample, an assumption worth testing, a contradiction in the argument, or an experiment with reproducible conditions.
+
+**[Open research discussion — when does persistent memory become continuing agency?](https://github.com/anteroom-studio/agi-field-notes/issues/1)** This focused thread is hosted in Anteroom Studio's AGI Field Notes and invites competing tests of memory, commitment, and verified action. For discussion of agent memory and attribution, see [the memory architecture review](https://github.com/Zawwarsami16/zai-memory-hub/issues/17); for a testable seven-engine methodology question, see [ZAI Genesis's research challenge](https://github.com/anteroom-studio/ZAI-Genesis/issues/1).
 
 Selected PDFs here preserve the original published files. Zenodo, PhilPapers, and the [website's individual entries](https://zawwarsami.com/writing) are the authoritative bibliographic references; this archive does not imply journal peer review or independently validated experiments.
 
