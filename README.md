@@ -44,7 +44,7 @@ https://zawwarsami.com
 
 **Try an implementation:** [zhub's 10-minute walkthrough](https://github.com/Zawwarsami16/zhub/blob/main/docs/TUTORIAL.md) · [Pocket live demo](https://pocket-tau-sepia.vercel.app)  
 **Challenge an assumption:** [Open engineering challenge #01 — cross-client AI access](https://github.com/Zawwarsami16/zhub/issues/7)  
-**Discuss a research problem:** [shared-agent memory, provenance and access boundaries](https://github.com/Zawwarsami16/zai-memory-hub) · [open a technical question](https://github.com/Zawwarsami16/zai-memory-hub/issues/new)
+**Discuss a research problem:** [shared-agent memory, provenance and access boundaries](https://github.com/Zawwarsami16/zai-memory-hub) · [join the provenance discussion](https://github.com/Zawwarsami16/zai-memory-hub/issues/17)
 
 <table>
   <tr>
@@ -61,7 +61,7 @@ WiFi for AIs. Turn any AI into a discoverable, OpenAI-compatible endpoint in thr
 
 #### `>` [pocket](https://github.com/Zawwarsami16/pocket)
 
-Browser-only AI chat. Bring your own key, nothing leaves the device. [Live.](https://pocket-tau-sepia.vercel.app)
+Browser-only AI chat. Local storage, direct requests to the model provider you choose. [Live.](https://pocket-tau-sepia.vercel.app)
 
 ![pocket](https://img.shields.io/github/stars/Zawwarsami16/pocket?style=flat-square&color=ff003c&labelColor=0a0a0a&label=stars) ![lang](https://img.shields.io/badge/typescript-0a0a0a?style=flat-square&logo=typescript&logoColor=ff003c&label=lang&labelColor=0a0a0a&color=ff003c)
 
