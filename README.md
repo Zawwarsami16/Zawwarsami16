@@ -30,7 +30,7 @@ Research, papers, and projects:
 
 https://zawwarsami.com
 
-**[Research Universe — A / C / P / S / W / Z](https://github.com/Zawwarsami16/Reseach-long-term-vision-public)** · [Selected papers & research discussions](https://github.com/Zawwarsami16/Reseach-long-term-vision-public/issues)
+**[Research Universe — A / C / P / S / W / Z](https://github.com/Zawwarsami16/Public-Research-Tree)** · [Selected papers & research discussions](https://github.com/Zawwarsami16/Public-Research-Tree/issues)
 
 <sub>Longer answer: [WHO.md](./WHO.md).</sub>
 
